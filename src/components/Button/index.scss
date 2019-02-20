@@ -1,0 +1,37 @@
+
+@import "../../style/base/fn";
+@import "vars";
+@import "../Input/vars";
+@import "btn-global";
+@import "btn-default";
+@import "btn-primary";
+@import "btn-warn";
+@import "btn-ghost";
+
+button, input {
+    &.yz-btn {
+        width: 100%;
+        border-width: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &.yz-btn-inline {
+        width: auto;
+    }
+    &.yz-btn-ghost {
+        border-width: 1px;
+        background-color: transparent;
+    }
+}
+
+.yz-btn-inline {
+    display: inline-block;
+    padding: 0 1.32em;
+    line-height: $yzBtnMiniHeight;
+    font-size: $yzBtnMiniFontSize;
+}
+
+

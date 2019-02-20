@@ -1,0 +1,36 @@
+
+
+.yz-toast {
+  position: fixed;
+  z-index: 5000;
+  width: 7.6em;
+  min-height: 7.6em;
+  top: 180px;
+  left: 50%;
+  margin-left: -3.8em;
+  background: rgba(17,17,17,0.7);
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+
+  .yz-loading{
+    margin:30px 0 0;
+    width:38px;
+    height:38px;
+    vertical-align: baseline;
+    display: inline-block;
+  }
+
+  .yz-icon-success-no-circle{
+    &:before {
+      color: #FFFFFF;
+      font-size: 55px;
+      margin: 22px 0 0;
+      display: block;
+    }
+  }
+}
+
+.yz-toast__content {
+  margin: 0 0 15px;
+}

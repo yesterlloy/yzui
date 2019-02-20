@@ -1,0 +1,69 @@
+
+
+.yz-cell_select {
+    padding: 0;
+    .yz-select {
+        padding-right: 30px;
+    }
+    .yz-cell__bd{
+        &:after{
+            content: " ";
+            @include setArrow(right, 6px, #C8C8CD, 2px);
+
+            position: absolute;
+            top: 50%;
+            right: $yzCellGapH;
+            margin-top: -4px;
+        }
+    }
+}
+
+.yz-select {
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: inherit;
+    height: $yzCellHeight;
+    line-height: $yzCellHeight;
+    position: relative;
+    z-index: 1;
+    padding-left: $yzCellGapH;
+}
+
+.yz-cell_select-before {
+    padding-right:$yzCellGapH;
+    .yz-select{
+        width:$yzCellLabelWidth;
+        box-sizing: border-box;
+    }
+    .yz-cell__hd {
+        position:relative;
+        &:after {
+            @include setRightLine($yzCellBorderColor);
+        }
+        &:before{
+            content: " ";
+            @include setArrow(right, 6px, #C8C8CD, 2px);
+
+            position: absolute;
+            top: 50%;
+            right: $yzCellGapH;
+            margin-top: -4px;
+        }
+    }
+    .yz-cell__bd {
+        padding-left:$yzCellGapH;
+        &:after{
+            display:none;
+        }
+    }
+}
+
+.yz-cell_select-after {
+    padding-left:$yzCellGapH;
+    .yz-select {
+        padding-left:0;
+    }
+}

@@ -1,0 +1,75 @@
+
+/*
+z-index:
+0: .yz-swiped-btn
+1: .yz-cell_swiped .yz-cell__bd
+2: .yz-cells和.yz-cell的1px线
+*/
+
+.yz-cells {
+    margin-top: $yzCellsMarginTop;
+    background-color: $yzCellBg;
+    line-height: $yzCellLineHeight;
+    font-size: $yzCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+
+    overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
+
+    // onepx
+    position: relative;
+    &:before {
+        @include setTopLine($yzCellBorderColor);
+        z-index: 2;
+    }
+    &:after {
+        @include setBottomLine($yzCellBorderColor);
+        z-index: 2;
+    }
+}
+
+.yz-cells__title {
+    margin-top: .77em; // 15px - 行高
+    margin-bottom: .3em; // 8px - 行高
+    padding-left: $yzCellGapH;
+    padding-right: $yzCellGapH;
+    color: $yzTextColorGray;
+    font-size: $yzCellTipsFontSize;
+
+    & + .yz-cells {
+        margin-top: 0;
+    }
+}
+
+.yz-cells__tips {
+    margin-top: .3em; // 8px - 行高
+    color: $yzTextColorGray;
+    padding-left: $yzCellGapH;
+    padding-right: $yzCellGapH;
+    font-size: $yzCellTipsFontSize;
+}
+
+.yz-cell {
+    padding: $yzCellGapV $yzCellGapH;
+    position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
+    display: flex;
+    align-items: center;
+    &:before {
+        @include setTopLine($yzCellBorderColor);
+        left: $yzCellGapH;
+        z-index: 2;
+    }
+    &:first-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+.yz-cell_primary{
+    align-items: flex-start;
+}
+.yz-cell__bd{
+    flex: 1;
+}
+.yz-cell__ft {
+    text-align: right;
+    color: $yzTextColorGray;
+}

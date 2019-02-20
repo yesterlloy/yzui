@@ -1,0 +1,17 @@
+
+.yz-btn-warn {
+  background-color: $yzBtnWarnBg;
+
+  &:not(.yz-btn-disabled):visited {
+    color: $yzBtnFontColor;
+  }
+
+  &:not(.yz-btn-disabled):active {
+    color: $yzBtnActiveFontColor;
+    background-color: $yzBtnWarnActiveBg;
+  }
+
+  &.yz-btn-disabled {
+    background-color: $yzBtnwarnDisabledBg;
+  }
+}

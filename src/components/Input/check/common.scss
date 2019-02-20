@@ -1,0 +1,12 @@
+
+.yz-check__label {
+    @include setTapColor();
+    &:active {
+        background-color: #ECECEC;
+    }
+}
+
+.yz-check{
+    position: absolute;
+    left: -9999em;
+}

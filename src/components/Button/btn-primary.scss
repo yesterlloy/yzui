@@ -1,0 +1,19 @@
+@import "vars";
+
+.yz-btn-primary {
+  background-color: $yzBtnPrimaryBg;
+
+  &:not(.yz-btn-disabled):visited {
+    color: $yzBtnFontColor;
+  }
+
+  &:not(.yz-btn-disabled):active {
+    color: $yzBtnActiveFontColor;
+    background-color: $yzBtnPrimaryActiveBg;
+  }
+
+  &.yz-btn-disabled {
+    color: $yzBtnDisabledFontColor;
+    background-color: $yzBtnPrimaryDisabledBg;
+  }
+}

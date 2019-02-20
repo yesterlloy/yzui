@@ -1,0 +1,23 @@
+$yzCellBg:#FFFFFF;
+$yzCellBorderColor:#e5e5e5;
+$yzCellGapV:10px;
+$yzCellGapH:15px;
+$yzCellInnerGapH:.35em;
+$yzCellHeight: 45px;
+$yzCellFontSize:17px;
+$yzCellTipsFontSize:14px;
+$yzCellLabelWidth:105px;
+
+$yzCellLineHeight: ($yzCellHeight - 2 * $yzCellGapV) / $yzCellFontSize; // 高度减去上下padding的行高
+// $yzCellsMarginTop: unit(20 / $yzCellFontSize, em);
+$yzCellsMarginTop: 1em;
+
+// yz switch
+$yzSwitchHeight: 32px;
+
+// yz uploader
+$yzUploaderBorderColor:#D9D9D9;
+$yzUploaderActiveBorderColor:#999999;
+$yzUploaderFileSpacing: 9px;
+$yzUploaderSize: 79px;
+$yzUploaderBorderWidth: 1px;

@@ -1,0 +1,24 @@
+
+.yz-cells_radio{
+    .yz-cell__ft {
+        padding-left: $yzCellInnerGapH;
+    }
+}
+.yz-check {
+    // radio
+    .yz-cells_radio & {
+		& + .yz-icon-checked {
+			min-width:16px;
+		}
+        &:checked {
+            & + .yz-icon-checked {
+                &:before {
+                    display: block;
+                    content: '\EA08';
+                    color: #09BB07;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+
+.yz-cell_vcode {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.yz-vcode-img{
+    margin-left: 5px;
+    height: $yzCellHeight;
+    vertical-align: middle;
+}
+
+.yz-vcode-btn {
+    display: inline-block;
+    height: $yzCellHeight;
+    margin-left: 5px;
+    padding: 0 0.6em 0 0.7em;
+    border-left: 1px solid $yzLineColorLight;
+    line-height: $yzCellHeight;
+    vertical-align: middle;
+    font-size: $yzCellFontSize;
+    color: $yzDialogLinkColor;
+    &button {
+        background-color: transparent;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        outline: 0;
+    }
+    &:active {
+        color: desaturate($yzDialogLinkColor, 30%);
+    }
+}

@@ -1,0 +1,58 @@
+
+
+@import "../../style/base/fn";
+
+.yz-tabbar {
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    background-color: #F7F7FA;
+
+    &:before {
+        @include setTopLine(#C0BFC4);
+    }
+}
+
+.yz-tabbar__item {
+    display: block;
+    flex: 1;
+    padding: 5px 0 0;
+    font-size: 0;
+    color: $yzTextColorGray;
+    text-align: center;
+    @include setTapColor();
+
+    &.yz-bar__item_on {
+        .yz-tabbar__icon,
+        .yz-tabbar__icon > i,
+        .yz-tabbar__label {
+            color: #09BB07;
+        }
+    }
+}
+
+.yz-tabbar__icon {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+
+    &i,
+    > i {
+        font-size: 24px;
+        color: $yzTextColorGray;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.yz-tabbar__label {
+    text-align: center;
+    color: $yzTextColorGray;
+    font-size: 10px;
+    line-height: 1.8;
+}

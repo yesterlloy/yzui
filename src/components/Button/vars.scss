@@ -1,0 +1,46 @@
+$yzBtnHeight:46px;
+$yzBtnFontSize:18px;
+$yzBtnFontColor:#FFFFFF;
+$yzBtnActiveFontColor:rgba(255,255,255,.6);
+$yzBtnDisabledFontColor:rgba(255,255,255,.6);
+$yzBtnBorderRadius:5px;
+$yzBtnDefaultGap:15px;
+
+$yzBtnMiniFontSize:13px;
+$yzBtnMiniHeight:2.3;
+
+$yzBtnDefaultFontColor: $yzTextColorTitle;
+// $yzBtnDefaultActiveFontColor: lighten($yzTextColorTitle, 10%);
+$yzBtnDefaultActiveFontColor: rgba(0,0,0,.6);
+//$yzBtnDefaultDisabledFontColor: lighten($yzTextColorTitle, 15%);
+$yzBtnDefaultDisabledFontColor: rgba(0, 0, 0, .3);
+
+$yzBtnDefaultBg:#F8F8F8;
+$yzBtnDefaultActiveBg:#DEDEDE;
+$yzBtnDefaultDisabledBg:#F7F7F7;
+
+//$yzBtnPrimaryBg:#1AAD19;
+//$yzBtnPrimaryActiveBg:#179B16;
+//$yzBtnPrimaryDisabledBg:#9ED99D;
+$yzBtnPrimaryBg: $yzColorPrimary;
+$yzBtnPrimaryActiveBg: darken($yzColorPrimary, 15%);
+$yzBtnPrimaryDisabledBg: lighten($yzColorPrimary, 10%);
+
+$yzBtnWarnBg:#E64340;
+$yzBtnWarnActiveBg:#CE3C39;
+$yzBtnwarnDisabledBg:#EC8B89;
+
+
+//$yzBtnPlainPrimaryColor:rgba(26,173,25,1);
+//$yzBtnPlainPrimaryBorderColor:rgba(26,173,25,1);
+//$yzBtnPlainPrimaryActiveColor:rgba(26,173,25,.6);
+//$yzBtnPlainPrimaryActiveBorderColor:rgba(26,173,25,.6);
+$yzBtnPlainPrimaryColor: $yzTextColorTitle;
+$yzBtnPlainPrimaryBorderColor: $yzColorPrimary;
+$yzBtnPlainPrimaryActiveColor: lighten($yzTextColorTitle, 10%);
+$yzBtnPlainPrimaryActiveBorderColor: darken($yzColorPrimary, 15%);
+
+$yzBtnPlainDefaultColor:rgba(53,53,53,1);
+$yzBtnPlainDefaultBorderColor:rgba(53,53,53,1);
+$yzBtnPlainDefaultActiveColor:rgba(53,53,53,.6);
+$yzBtnPlainDefaultActiveBorderColor:rgba(53,53,53,.6);

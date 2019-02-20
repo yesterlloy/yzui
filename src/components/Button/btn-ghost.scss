@@ -1,0 +1,21 @@
+
+@import "vars";
+
+.yz-btn-ghost {
+    color: $yzBtnPlainPrimaryColor;
+    border: 1px solid $yzBtnPlainPrimaryBorderColor;
+    &:not(.yz-btn-disabled):active {
+        color: $yzBtnPlainPrimaryActiveColor;
+        border-color: $yzBtnPlainPrimaryActiveBorderColor;
+        box-shadow: 2px 2px 2px lighten($yzBtnPlainPrimaryActiveBorderColor, 35%);
+    }
+    &:after {
+        border-width: 0;
+    }
+
+    &.yz-btn-disabled {
+      color:rgba(0,0,0,.2);
+      border-color:rgba(0,0,0,.2);
+    }
+}
+

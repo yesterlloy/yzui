@@ -1,0 +1,106 @@
+
+@import "../../style/base/fn";
+@import "../Input/vars";
+
+$yzActionSheetAndroidBorderRadius: 2px;
+
+.yz-actionsheet {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+    backface-visibility: hidden;
+    z-index: 5000;
+    width: 100%;
+    background-color: $yzBgColorDefault;
+    //slide up animation
+    transition: transform .3s;
+}
+.yz-actionsheet__title {
+    position: relative;
+    height: 65px;
+    padding: 0 20px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    background: #FCFCFD;
+    &:before {
+        @include setBottomLine($yzCellBorderColor);
+    }
+    .yz-actionsheet__title-text {
+        @include ellipsisLn(2);
+    }
+}
+.yz-actionsheet__menu{
+    background-color: #FCFCFD;
+}
+.yz-actionsheet__action {
+    margin-top: 6px;
+    background-color: #FCFCFD;;
+}
+.yz-actionsheet__cell {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    &:before {
+        @include setTopLine($yzCellBorderColor);
+    }
+    &:active{
+        background-color: $yzBgColorActive;
+    }
+    &:first-child{
+        &:before{
+            display: none;
+        }
+    }
+}
+
+
+//android actionSheet
+.yz-skin_android{
+    .yz-actionsheet {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        //padding: 0 40px;
+        width: 274px;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+        background: transparent;
+        //slide up animation
+        transition: transform .3s;
+    }
+    .yz-actionsheet__action{
+        display: none;
+    }
+    .yz-actionsheet__menu {
+        border-radius: $yzActionSheetAndroidBorderRadius;
+        box-shadow: 0 6px 30px 0 rgba(0,0,0,.1);
+    }
+    .yz-actionsheet__cell {
+        padding: 13px 24px;
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: left;
+        &:first-child {
+            border-top-left-radius: $yzActionSheetAndroidBorderRadius;
+            border-top-right-radius: $yzActionSheetAndroidBorderRadius;
+        }
+        &:last-child {
+            border-bottom-left-radius: $yzActionSheetAndroidBorderRadius;
+            border-bottom-right-radius: $yzActionSheetAndroidBorderRadius;
+        }
+    }
+}
+
+//actionSheet aniamtion
+.yz-actionsheet_toggle{
+    transform: translate(0, 0);
+}

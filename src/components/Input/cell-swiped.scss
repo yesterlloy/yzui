@@ -1,0 +1,30 @@
+
+.yz-cell_swiped {
+    display: block;
+    padding: 0;
+    > .yz-cell__bd {
+        position: relative;
+        z-index: 1;
+        background-color: #FFFFFF;
+    }
+    > .yz-cell__ft {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        color: #FFFFFF;
+    }
+}
+.yz-swiped-btn {
+    display: block;
+    padding: $yzCellGapV 1em;
+    line-height: $yzCellLineHeight;
+    color: inherit;
+}
+.yz-swiped-btn_default {
+    background-color: #C7C7CC;
+}
+.yz-swiped-btn_warn {
+    background-color: #FF3B30;
+}

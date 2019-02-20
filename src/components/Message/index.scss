@@ -1,0 +1,55 @@
+
+
+@import "../../style/base/fn";
+@import "vars";
+
+.yz-msg {
+    padding-top: $yzMsgPaddingTop;
+    text-align: center;
+}
+.yz-msg__icon-area {
+    margin-bottom: $yzMsgIconGap;
+}
+.yz-msg__text-area {
+    margin-bottom: $yzMsgTextGap;
+    padding:0 20px;
+}
+.yz-msg__text-area a{
+    color:$yzLinkColorDefault;
+}
+.yz-msg__title {
+    margin-bottom: $yzMsgTitleGap;
+    font-weight: 400;
+    font-size: 20px;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.yz-msg__desc {
+    font-size: 14px;
+    color: $yzTextColorGray;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.yz-msg__opr-area {
+    margin-bottom: $yzMsgOprGap;
+}
+.yz-msg__extra-area {
+    margin-bottom: $yzMsgExtraAreaGap;
+    font-size: 14px;
+    color: $yzTextColorGray;
+    a{color: $yzLinkColorDefault;}
+}
+@media screen and (min-height: $yzMsgExtraAreaOfMinHeight) {
+    .yz-msg__extra-area {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3){ // iPhoneX
+    .yz-msg__extra-area {
+        margin-bottom: $yzMsgExtraAreaGap + 34;
+    }
+}

@@ -1,0 +1,90 @@
+
+
+.yz-form-preview{
+    position: relative;
+    background-color: #FFFFFF;
+    &:before{
+        @include setTopLine($yzCellBorderColor);
+    }
+    &:after{
+        @include setBottomLine($yzCellBorderColor);
+    }
+}
+.yz-form-preview__hd{
+    position: relative;
+    padding: $yzCellGapV $yzCellGapH;
+    text-align: right;
+    line-height: 2.5em;
+    &:after{
+        @include setBottomLine($yzCellBorderColor);
+        left: $yzCellGapH;
+    }
+    .yz-form-preview__value{
+        font-style: normal;
+        font-size: 1.6em;
+    }
+}
+.yz-form-preview__bd{
+    padding: $yzCellGapV $yzCellGapH;
+    font-size: .9em;
+    text-align: right;
+    color: $yzTextColorGray;
+    line-height: 2;
+}
+.yz-form-preview__ft{
+    position: relative;
+    line-height: 50px;
+    display: flex;
+    &:before {
+        @include setTopLine($yzDialogLineColor);
+    }
+}
+.yz-form-preview__item{
+    overflow: hidden;
+}
+.yz-form-preview__label{
+    float: left;
+    margin-right: 1em;
+    min-width: 4em;
+    color: $yzTextColorGray;
+    text-align: justify;
+    text-align-last: justify;
+}
+.yz-form-preview__value{
+    display: block;
+    overflow: hidden;
+    word-break:normal;
+    word-wrap: break-word;
+}
+.yz-form-preview__btn {
+    position: relative;
+    display: block;
+    flex: 1;
+    color: $yzDialogLinkColor;
+    text-align: center;
+    @include setTapColor();
+    &button {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        line-height: inherit;
+        font-size: inherit;
+    }
+    &:active {
+        background-color: $yzDialogLinkActiveBc;
+    }
+    &:after {
+        @include setLeftLine($yzDialogLineColor);
+    }
+    &:first-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+.yz-form-preview__btn_default {
+    color: $yzTextColorGray;
+}
+.yz-form-preview__btn_primary {
+    color: #0BB20C;
+}

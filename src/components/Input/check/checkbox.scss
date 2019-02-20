@@ -1,0 +1,29 @@
+
+.yz-cells_checkbox {
+    .yz-cell__hd {
+        padding-right: $yzCellInnerGapH;
+    }
+    .yz-icon-checked {
+        &:before {
+            content: '\EA01';
+            color: #C9C9C9;
+            font-size: 23px;
+            display: block;
+        }
+    }
+}
+
+// method2 accessbility
+.yz-check {
+    // checkbox
+    .yz-cells_checkbox & {
+        &:checked {
+            & + .yz-icon-checked {
+                &:before {
+                    content: '\EA06';
+                    color: #09BB07;
+                }
+            }
+        }
+    }
+}
