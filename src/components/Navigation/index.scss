@@ -19,6 +19,9 @@
         padding: $wingWidth $wingWidth ($navbarHeight + $wingWidth);
       }
     }
+    &.yz-nav-bottom.yz-nav-top .yz-tab-panel {
+      padding: ($navbarHeight + $wingWidth) $wingWidth;
+    }
 }
 
 .yz-tab-panel{

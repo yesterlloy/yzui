@@ -20,35 +20,11 @@
     background-color: #FAFAFA;
     align-items: center;
     line-height: 1;
-}
-
-.yz-nav-top {
-
-  .yz-navbar {
-    bottom: auto;
-    top: 0;
-
     &:after {
       @include setBottomLine(#CCCCCC);
     }
-
-  }
-
 }
 
-.yz-nav-bottom {
-
-  .yz-navbar {
-    top: auto;
-    bottom: 0;
-
-    &:after {
-      @include setTopLine(#CCCCCC);
-    }
-
-  }
-
-}
 
 .yz-navbar-left, {
   position: relative;
