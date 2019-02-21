@@ -1,0 +1,91 @@
+
+@import "../../style/base/fn";
+@import "vars";
+
+.yz-navbar-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.yz-navbar-panel {
+  padding: ($navbarHeight + $wingWidth) $wingWidth $wingWidth;
+}
+
+.yz-navbar {
+    display: flex;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+    background-color: #FAFAFA;
+    align-items: center;
+    line-height: 1;
+}
+
+.yz-nav-top {
+
+  .yz-navbar {
+    bottom: auto;
+    top: 0;
+
+    &:after {
+      @include setBottomLine(#CCCCCC);
+    }
+
+  }
+
+}
+
+.yz-nav-bottom {
+
+  .yz-navbar {
+    top: auto;
+    bottom: 0;
+
+    &:after {
+      @include setTopLine(#CCCCCC);
+    }
+
+  }
+
+}
+
+.yz-navbar-left, {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+
+  .yz-navbar-item:first-child {
+    padding-left: $wingWidth;
+  }
+}
+
+.yz-navbar-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  .yz-navbar-item:last-child {
+    padding-right: $wingWidth;
+  }
+
+}
+
+.yz-navbar-content {
+  color: $yzTextColorTitle;
+  font-size: $navbarFontSize;
+  padding: (($navbarHeight - $navbarFontSize) / 2) 0;
+}
+
+.yz-navbar-item {
+    position: relative;
+    display: block;
+    padding: (($navbarHeight - $navbarFontSize) / 2) 6px;
+    text-align: center;
+    font-size: $navbarFontSize;
+    text-decoration: none;
+    color: $yzTextColorTitle;
+    @include setTapColor();
+}

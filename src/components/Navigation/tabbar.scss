@@ -1,12 +1,18 @@
 
 
 @import "../../style/base/fn";
+@import "vars";
+
+.yz-tabbar-content {
+  padding: 12px 12px ($navbarHeight + 12px);
+}
 
 .yz-tabbar {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 500;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #F7F7FA;
 
@@ -15,25 +21,25 @@
     }
 }
 
-.yz-tabbar__item {
+.yz-tabbar-item {
     display: block;
     flex: 1;
-    padding: 5px 0 0;
+    padding: 3px 0 0;
     font-size: 0;
     color: $yzTextColorGray;
     text-align: center;
     @include setTapColor();
 
-    &.yz-bar__item_on {
-        .yz-tabbar__icon,
-        .yz-tabbar__icon > i,
-        .yz-tabbar__label {
-            color: #09BB07;
+    &.yz-tabbar-item-on {
+        .yz-tabbar-icon,
+        .yz-tabbar-icon > i,
+        .yz-tabbar-label {
+            color: $yzColorPrimary;
         }
     }
 }
 
-.yz-tabbar__icon {
+.yz-tabbar-icon {
     display: inline-block;
     width: 27px;
     height: 27px;
@@ -50,7 +56,7 @@
     }
 }
 
-.yz-tabbar__label {
+.yz-tabbar-label {
     text-align: center;
     color: $yzTextColorGray;
     font-size: 10px;

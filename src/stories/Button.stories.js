@@ -9,20 +9,10 @@ import buttonGhost from '../components/Button/ghost.html';
 import buttonInline from '../components/Button/inline.html';
 
 storiesOf('Button 按钮', module)
-  .add('default', () => buttonDefault, {
-    codes: buttonDefault,
-  })
-  .add('primary', () => buttonPrimary, {
-    codes: buttonPrimary,
-  })
-  .add('warn', () => buttonWarn, {
-    codes: buttonWarn,
-  })
-  .add('ghost', () => buttonGhost, {
-    codes: buttonGhost,
-  })
-  .add('inline', () => buttonInline, {
-    codes: buttonInline,
-  })
+  .add('default', () => buttonDefault, { codes: buttonDefault })
+  .add('primary', () => buttonPrimary, { codes: buttonPrimary })
+  .add('warn', () => buttonWarn, { codes: buttonWarn })
+  .add('ghost', () => buttonGhost, { codes: buttonGhost })
+  .add('inline', () => buttonInline, { codes: buttonInline })
 ;
 

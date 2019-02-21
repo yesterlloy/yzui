@@ -1,0 +1,30 @@
+
+
+@import "../../style/base/fn";
+@import "tabbar";
+@import "navbar";
+@import "tabs";
+
+.yz-tab {
+    position: relative;
+    height: 100%;
+
+    &.yz-nav-top {
+      .yz-tab-panel {
+        padding: ($navbarHeight + $wingWidth) $wingWidth $wingWidth;
+      }
+    }
+    &.yz-nav-bottom {
+      .yz-tab-panel {
+        padding: $wingWidth $wingWidth ($navbarHeight + $wingWidth);
+      }
+    }
+}
+
+.yz-tab-panel{
+    box-sizing: border-box;
+    height: 100%;
+    padding: $wingWidth;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}

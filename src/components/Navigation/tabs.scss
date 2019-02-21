@@ -1,39 +1,57 @@
 
 
 @import "../../style/base/fn";
+@import "vars";
 
-.yz-navbar {
+
+.yz-tab-content{
+    display: none;
+}
+
+.yz-tabs{
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 500;
     top: 0;
     width: 100%;
     background-color: #FAFAFA;
 
+
+}
+.yz-nav-top {
+  .yz-tabs {
     &:after {
         @include setBottomLine(#CCCCCC);
     }
+  }
+}
+.yz-nav-bottom {
 
-    & + .yz-tab__panel {
-        padding-top: 50px;
-        padding-bottom: 0;
+  .yz-tabs {
+    top: auto;
+    bottom: 0;
+
+    &:after {
+      @include setTopLine(#CCCCCC);
     }
+  }
+
 }
 
-.yz-navbar__item {
+.yz-tabs-item {
     position: relative;
     display: block;
     flex: 1;
     padding: 13px 0;
     text-align: center;
-    font-size: 15px;
+    font-size: $navbarFontSize;
     @include setTapColor();
 
     &:active {
         background-color: #EDEDED;
     }
 
-    &.yz-bar__item_on {
+    &.yz-tabs-item-on {
         background-color: #EAEAEA;
     }
 
