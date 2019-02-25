@@ -28,27 +28,33 @@
     font-size: 0;
     color: $yzTextColorGray;
     text-align: center;
+    position: relative;
     @include setTapColor();
 
     &.yz-tabbar-item-on {
         .yz-tabbar-icon,
-        .yz-tabbar-icon > i,
         .yz-tabbar-label {
             color: $yzColorPrimary;
         }
     }
+    i {
+        font-size: 24px;
+        color: inherit;
+        line-height: 1;
+    }
+
+}
+
+.yz-tabbar-icon-wrap {
+  position: relative;
+  display: inline-block;
 }
 
 .yz-tabbar-icon {
     display: inline-block;
-    width: 27px;
-    height: 27px;
-
-    &i,
-    > i {
-        font-size: 24px;
-        color: $yzTextColorGray;
-    }
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
 
     img {
         width: 100%;
@@ -61,4 +67,8 @@
     color: $yzTextColorGray;
     font-size: 10px;
     line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.8);
 }
+

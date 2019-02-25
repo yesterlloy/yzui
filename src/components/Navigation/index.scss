@@ -8,26 +8,34 @@
 .yz-tab {
     position: relative;
     height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
 
     &.yz-nav-top {
       .yz-tab-panel {
-        padding: ($navbarHeight + $wingWidth) $wingWidth $wingWidth;
+        padding: $navbarHeight 0 0;
       }
     }
+
     &.yz-nav-bottom {
       .yz-tab-panel {
-        padding: $wingWidth $wingWidth ($navbarHeight + $wingWidth);
+        padding: 0 0 $navbarHeight;
       }
     }
+
+    &.yz-tab-bg {
+      background-color: #f8f8f8;
+    }
+
     &.yz-nav-bottom.yz-nav-top .yz-tab-panel {
-      padding: ($navbarHeight + $wingWidth) $wingWidth;
+      padding: $navbarHeight 0;
     }
 }
 
 .yz-tab-panel{
     box-sizing: border-box;
     height: 100%;
-    padding: $wingWidth;
+    padding: 0;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }

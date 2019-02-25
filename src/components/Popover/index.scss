@@ -1,0 +1,54 @@
+@import "../../style/base/fn";
+
+$popoverBackcolor: #4c4c4c;
+$popoverTextColor: #fff;
+
+.yz-popover {
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.yz-popover-panel {
+  display: none;
+  z-index: 899;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  min-width: 150px;
+  background-color: $popoverBackcolor;
+  padding: 0 25px;
+  border-radius: 5px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: -4px;
+    background-color: $popoverBackcolor;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  &.yz-popover-panel-show {
+    display: block;
+  }
+}
+
+.yz-popover-item {
+  color: #fff;
+  padding: 15px 0;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 200;
+
+  &:after {
+    @include setBottomLine(#fff);
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}

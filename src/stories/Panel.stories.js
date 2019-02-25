@@ -1,6 +1,7 @@
 /* global document */
 import { storiesOf } from '@storybook/html';
 import '../components/Panel/index.scss';
+import '../style/base/reset.scss';
 
 import panelMedia from '../components/Panel/media.html';
 import panelText from '../components/Panel/text.html';

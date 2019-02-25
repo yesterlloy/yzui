@@ -10,7 +10,8 @@ z-index:
     margin-top: $yzCellsMarginTop;
     background-color: $yzCellBg;
     line-height: $yzCellLineHeight;
-    font-size: $yzCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+    font-size: $yzCellFontSize; //cell中间有效高度22px，跟客户端默认图标尺寸一致
+    color: $yzTextColorTitle;
 
     overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
 
@@ -23,6 +24,17 @@ z-index:
     &:after {
         @include setBottomLine($yzCellBorderColor);
         z-index: 2;
+    }
+    &.yz-cells-notop {
+      margin-top: 0;
+    }
+    &.yz-cells-noborder {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
     }
 }
 
@@ -65,6 +77,18 @@ z-index:
 }
 .yz-cell_primary{
     align-items: flex-start;
+}
+.yz-cell__hd {
+  margin-right: 5px;
+  i {
+    font-size: 16px;
+    line-height: inherit;
+  }
+  img {
+    width: 20px;
+    max-height: 20px;
+    display: block;
+  }
 }
 .yz-cell__bd{
     flex: 1;

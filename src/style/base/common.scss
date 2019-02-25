@@ -1,0 +1,34 @@
+
+$px-origin: 1px;
+
+@for $n from 1 through 60 {
+  @if $n % 5 == 0 {
+    .mt#{$n} {
+      margin-top: $px-origin;
+    }
+    .mb#{$n} {
+      margin-bottom: $px-origin;
+    }
+    .ml#{$n} {
+      margin-left: $px-origin;
+    }
+    .mr#{$n} {
+      margin-right: $px-origin;
+    }
+    .pt#{$n} {
+      padding-top: $px-origin;
+    }
+    .pb#{$n} {
+      padding-bottom: $px-origin;
+    }
+  }
+  $px-origin: $px-origin + 1px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -1,6 +1,8 @@
 /* global document */
 import { storiesOf } from '@storybook/html';
 import '../components/Navigation/index.scss';
+import '../components/Icons/index.scss';
+import '../components/Badge/index.scss';
 
 import tabBar from '../components/Navigation/tabBar.html';
 import navBar from '../components/Navigation/navBar.html'

@@ -1,5 +1,7 @@
 
 @import "./base/fn";
+@import "./base/common";
+@import "./base/reset";
 
 // icon font
 @import "../components/Icons/index";
@@ -54,3 +56,9 @@
 
 // slider
 @import "../components/Slider/index";
+
+// popover
+@import "../components/Popover/index";
+
+// chat
+@import "../components/Chat/index";
