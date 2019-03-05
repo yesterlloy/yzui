@@ -16,6 +16,7 @@ $yzChatListBg: #ededed;
   width: 100%;
   background-color: $yzChatInputBg;
   align-items: flex-end;
+  z-index: 980;
 
   &:after {
     @include setTopLine();
@@ -65,7 +66,7 @@ $yzChatListBg: #ededed;
 }
 
 .yz-chat-list {
-  padding: 15px;
+  box-sizing: border-box;
 }
 
 .yz-chat-item {
@@ -73,13 +74,19 @@ $yzChatListBg: #ededed;
   display: flex;
   position: relative;
   margin-bottom: 15px;
+  box-sizing: border-box;
 }
 
+.yz-chat-avatar-wrap {
+  padding-left: 5px;
+  flex: 0 0 auto;
+}
 .yz-chat-avatar {
   width: $chatInputHeight;
   height: $chatInputHeight;
   border-radius: 6px;
   overflow: hidden;
+  margin-left: 15px;
 
   img {
     width: 100%;
@@ -87,14 +94,19 @@ $yzChatListBg: #ededed;
     border: 0 none;
   }
 }
-
 .yz-chat-content {
-  flex: 1;
+  flex: 1 1 auto;
+}
+
+.yz-chat-content-box {
+  display: inline-block;
+  word-break: break-all;
   background-color: #fff;
   margin-left: 15px;
   border-radius: 4px;
-  padding: 15px;
+  padding: 10px 15px;
   position: relative;
+  box-sizing: border-box;
 
   &:before {
     content: "";
@@ -111,14 +123,27 @@ $yzChatListBg: #ededed;
     max-width: 100%;
   }
 }
-.yz-chat-item-right .yz-chat-content{
-  margin-left: 0;
-  margin-right: 15px;
-  background-color: #95ec69;
-
-  &:before {
-    background-color: #95ec69;
-    left: auto;
-    right: -4px;
+.yz-chat-item.yz-chat-item-right {
+  .yz-chat-avatar-wrap {
+    padding-left: 0;
+    padding-right: 15px;
   }
+  .yz-chat-avatar {
+    margin-left: 0;
+  }
+
+  .yz-chat-content {
+  }
+  .yz-chat-content-box{
+    float: right;
+    margin-left: 0;
+    margin-right: 15px;
+    background-color: #95ec69;
+
+    &:before {
+      background-color: #95ec69;
+      left: auto;
+      right: -4px;
+    }
 }
+} 

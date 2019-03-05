@@ -79,17 +79,34 @@ z-index:
     align-items: flex-start;
 }
 .yz-cell__hd {
-  margin-right: 5px;
+  margin-right: 10px;
   i {
     font-size: 16px;
     line-height: inherit;
   }
   img {
     width: 20px;
-    max-height: 20px;
+    height: 20px;
     display: block;
   }
+
+
 }
+  .yz-cell__icon_md {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+  .yz-cell__icon_lg {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .yz-cell__icon_hg {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
 .yz-cell__bd{
     flex: 1;
 }

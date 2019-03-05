@@ -6,4 +6,29 @@
 }
 .yz-flex__item{
   flex: 1;
+  box-sizing: border-box;
+}
+.yz-flex-space-between {
+  justify-content: space-between;
+}
+.yz-flex-space-around {
+  justify-content: space-around;
+}
+.yz-flex-items-start {
+  align-items: flex-start;
+}
+.yz-flex-start {
+  align-self: flex-start;
+}
+.yz-flex-items-end {
+  align-items: flex-end;
+}
+.yz-flex-end {
+  align-self: flex-end;
+}
+.yz-flex-items-center {
+  align-items: center;
+}
+.yz-flex-center {
+  align-self: center;
 }

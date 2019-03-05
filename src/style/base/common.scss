@@ -1,3 +1,4 @@
+@import "../base/mixin/mobile";
 
 $px-origin: 1px;
 
@@ -32,3 +33,58 @@ $px-origin: 1px;
 .show {
   display: block;
 }
+.yz-img-md {
+  width: 60px;
+  height: 60px;
+  img {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+  }
+}
+.yz-img-lg {
+  width: 80px;
+  height: 80px;
+  img {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+  }
+
+}
+
+.yz-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1px;
+  margin-right: -1px;
+
+  &.yz-img-list-4 {
+    .yz-img-item {
+      width: 25%;
+    }
+  }
+
+  &.yz-img-list-3 {
+    .yz-img-item {
+      width: 33.3%;
+    }
+  }
+}
+.yz-img {
+  width: 100%;
+  height: 100%;
+}
+
+.yz-img-item {
+  padding: 1px;
+  box-sizing: border-box;
+  width: 80px;
+}
+
+.yz-link-block {
+  border-radius: 4px;
+  background-color: #f4f4f6;
+  @include setTapColor();
+}
+

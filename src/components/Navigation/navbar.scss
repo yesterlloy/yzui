@@ -18,11 +18,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: #EFEFF4;
     align-items: center;
     line-height: 1;
     &:after {
-      @include setBottomLine(#CCCCCC);
+      @include setBottomLine(#D7D6DC);
     }
 }
 
@@ -65,4 +65,8 @@
     text-decoration: none;
     color: $yzTextColorTitle;
     @include setTapColor();
+    outline: 0 none;
+    &:active,&:focus {
+      outline: 0 none;
+    }
 }

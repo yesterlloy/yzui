@@ -31,6 +31,10 @@
     position: relative;
     @include setTapColor();
 
+    &:focus {
+      outline: 0 none;
+    }
+
     &.yz-tabbar-item-on {
         .yz-tabbar-icon,
         .yz-tabbar-label {

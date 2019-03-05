@@ -7,6 +7,7 @@
     display: flex;
     box-sizing: border-box;
     background-color: #EFEFF4;
+    z-index: 888;
     -webkit-text-size-adjust: 100%;
     align-items: center;
     &:before {
@@ -24,6 +25,13 @@
         }
     }
 }
+.yz-search-bar-result {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
 .yz-search-bar__form {
     position: relative;
     flex: auto;

@@ -24,11 +24,20 @@
     }
 
     &.yz-tab-bg {
-      background-color: #f8f8f8;
+      background-color: #EFEFF4;
     }
 
     &.yz-nav-bottom.yz-nav-top .yz-tab-panel {
       padding: $navbarHeight 0;
+    }
+
+    &.yz-nav-search {
+      .yz-tab-panel {
+        padding: $navbarHeight 0 0;
+      }
+      .yz-navbar:after, .yz-search-bar:before {
+        display: none;
+      }
     }
 }
 
