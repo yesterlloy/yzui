@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.p5 {
+  padding: 5px; }
+
+.m5 {
+  margin: 5px; }
+
 .mt5 {
   margin-top: 5px; }
 
@@ -11,11 +17,23 @@
 .mr5 {
   margin-right: 5px; }
 
+.pl5 {
+  padding-left: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
 .pt5 {
   padding-top: 5px; }
 
 .pb5 {
   padding-bottom: 5px; }
+
+.p10 {
+  padding: 10px; }
+
+.m10 {
+  margin: 10px; }
 
 .mt10 {
   margin-top: 10px; }
@@ -29,11 +47,23 @@
 .mr10 {
   margin-right: 10px; }
 
+.pl10 {
+  padding-left: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
 .pt10 {
   padding-top: 10px; }
 
 .pb10 {
   padding-bottom: 10px; }
+
+.p15 {
+  padding: 15px; }
+
+.m15 {
+  margin: 15px; }
 
 .mt15 {
   margin-top: 15px; }
@@ -47,11 +77,23 @@
 .mr15 {
   margin-right: 15px; }
 
+.pl15 {
+  padding-left: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
 .pt15 {
   padding-top: 15px; }
 
 .pb15 {
   padding-bottom: 15px; }
+
+.p20 {
+  padding: 20px; }
+
+.m20 {
+  margin: 20px; }
 
 .mt20 {
   margin-top: 20px; }
@@ -65,11 +107,23 @@
 .mr20 {
   margin-right: 20px; }
 
+.pl20 {
+  padding-left: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
 .pt20 {
   padding-top: 20px; }
 
 .pb20 {
   padding-bottom: 20px; }
+
+.p25 {
+  padding: 25px; }
+
+.m25 {
+  margin: 25px; }
 
 .mt25 {
   margin-top: 25px; }
@@ -83,11 +137,23 @@
 .mr25 {
   margin-right: 25px; }
 
+.pl25 {
+  padding-left: 25px; }
+
+.pr25 {
+  padding-right: 25px; }
+
 .pt25 {
   padding-top: 25px; }
 
 .pb25 {
   padding-bottom: 25px; }
+
+.p30 {
+  padding: 30px; }
+
+.m30 {
+  margin: 30px; }
 
 .mt30 {
   margin-top: 30px; }
@@ -101,11 +167,23 @@
 .mr30 {
   margin-right: 30px; }
 
+.pl30 {
+  padding-left: 30px; }
+
+.pr30 {
+  padding-right: 30px; }
+
 .pt30 {
   padding-top: 30px; }
 
 .pb30 {
   padding-bottom: 30px; }
+
+.p35 {
+  padding: 35px; }
+
+.m35 {
+  margin: 35px; }
 
 .mt35 {
   margin-top: 35px; }
@@ -119,11 +197,23 @@
 .mr35 {
   margin-right: 35px; }
 
+.pl35 {
+  padding-left: 35px; }
+
+.pr35 {
+  padding-right: 35px; }
+
 .pt35 {
   padding-top: 35px; }
 
 .pb35 {
   padding-bottom: 35px; }
+
+.p40 {
+  padding: 40px; }
+
+.m40 {
+  margin: 40px; }
 
 .mt40 {
   margin-top: 40px; }
@@ -137,11 +227,23 @@
 .mr40 {
   margin-right: 40px; }
 
+.pl40 {
+  padding-left: 40px; }
+
+.pr40 {
+  padding-right: 40px; }
+
 .pt40 {
   padding-top: 40px; }
 
 .pb40 {
   padding-bottom: 40px; }
+
+.p45 {
+  padding: 45px; }
+
+.m45 {
+  margin: 45px; }
 
 .mt45 {
   margin-top: 45px; }
@@ -155,11 +257,23 @@
 .mr45 {
   margin-right: 45px; }
 
+.pl45 {
+  padding-left: 45px; }
+
+.pr45 {
+  padding-right: 45px; }
+
 .pt45 {
   padding-top: 45px; }
 
 .pb45 {
   padding-bottom: 45px; }
+
+.p50 {
+  padding: 50px; }
+
+.m50 {
+  margin: 50px; }
 
 .mt50 {
   margin-top: 50px; }
@@ -173,11 +287,23 @@
 .mr50 {
   margin-right: 50px; }
 
+.pl50 {
+  padding-left: 50px; }
+
+.pr50 {
+  padding-right: 50px; }
+
 .pt50 {
   padding-top: 50px; }
 
 .pb50 {
   padding-bottom: 50px; }
+
+.p55 {
+  padding: 55px; }
+
+.m55 {
+  margin: 55px; }
 
 .mt55 {
   margin-top: 55px; }
@@ -191,11 +317,23 @@
 .mr55 {
   margin-right: 55px; }
 
+.pl55 {
+  padding-left: 55px; }
+
+.pr55 {
+  padding-right: 55px; }
+
 .pt55 {
   padding-top: 55px; }
 
 .pb55 {
   padding-bottom: 55px; }
+
+.p60 {
+  padding: 60px; }
+
+.m60 {
+  margin: 60px; }
 
 .mt60 {
   margin-top: 60px; }
@@ -208,6 +346,12 @@
 
 .mr60 {
   margin-right: 60px; }
+
+.pl60 {
+  padding-left: 60px; }
+
+.pr60 {
+  padding-right: 60px; }
 
 .pt60 {
   padding-top: 60px; }
@@ -2065,10 +2209,11 @@ z-index:
 
 .yz-media-box__hd {
   margin-right: .8em;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center; }
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative; }
   .yz-media-box__hd i {
     font-size: 34px; }
   .yz-media-box__hd img {
@@ -3256,18 +3401,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .yz-chat {
   position: fixed;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   height: auto;
   line-height: 1;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: #f7f7f7;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   z-index: 980; }
   .yz-chat:after {
     content: " ";
@@ -3282,6 +3421,16 @@ input[type="search"]::-webkit-search-results-decoration {
             transform-origin: 0 0;
     -webkit-transform: scaleY(0.5);
             transform: scaleY(0.5); }
+
+.yz-chat-panel {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .yz-chat-swicher, .yz-chat-actions {
   width: 24px;
@@ -3389,6 +3538,60 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #95ec69;
     left: auto;
     right: -4px; }
+
+.yz-action-picker {
+  box-sizing: border-box;
+  padding: 0 13px;
+  position: relative;
+  transition: height 1s linear; }
+  .yz-action-picker:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #C7C7C7;
+    color: #C7C7C7;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5); }
+  .yz-action-picker.hide {
+    display: none;
+    height: 0; }
+  .yz-action-picker.show {
+    height: auto;
+    display: block; }
+
+.yz-action-picker-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.yz-action-picker-block {
+  width: 25%;
+  text-align: center;
+  margin-top: 12px; }
+
+.yz-action-picker-icon {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block; }
+  .yz-action-picker-icon i {
+    color: #222;
+    font-size: 30px;
+    line-height: 1; }
+
+.yz-action-picker-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #999; }
 
 .yz-comments {
   padding: 6px;

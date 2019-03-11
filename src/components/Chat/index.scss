@@ -156,8 +156,17 @@ $yzChatListBg: #ededed;
   box-sizing: border-box;
   padding: 0 13px;
   position: relative;
+  transition: height 1s linear;
   &:before {
     @include setTopLine();
+  }
+  &.hide {
+    display: none;
+    height: 0;
+  }
+  &.show {
+    height: auto;
+    display: block;
   }
 }
 .yz-action-picker-content {
