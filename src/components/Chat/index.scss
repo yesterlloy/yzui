@@ -172,11 +172,14 @@ $yzChatListBg: #ededed;
 .yz-action-picker-content {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .yz-action-picker-block {
   width: 25%;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .yz-action-picker-icon {
   background-color: lighten($yzChatInputBg, 20%);

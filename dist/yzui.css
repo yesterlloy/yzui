@@ -3570,12 +3570,15 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding-top: 6px;
+  padding-bottom: 6px; }
 
 .yz-action-picker-block {
   width: 25%;
   text-align: center;
-  margin-top: 12px; }
+  margin-top: 6px;
+  margin-bottom: 6px; }
 
 .yz-action-picker-icon {
   background-color: white;
