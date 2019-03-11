@@ -4,6 +4,12 @@ $px-origin: 1px;
 
 @for $n from 1 through 60 {
   @if $n % 5 == 0 {
+    .p#{$n} {
+      padding: $px-origin;
+    }
+    .m#{$n} {
+      margin: $px-origin;
+    }
     .mt#{$n} {
       margin-top: $px-origin;
     }
@@ -15,6 +21,12 @@ $px-origin: 1px;
     }
     .mr#{$n} {
       margin-right: $px-origin;
+    }
+    .pl#{$n} {
+      padding-left: $px-origin;
+    }
+    .pr#{$n} {
+      padding-right: $px-origin;
     }
     .pt#{$n} {
       padding-top: $px-origin;
