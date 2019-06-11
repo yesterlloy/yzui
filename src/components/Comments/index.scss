@@ -25,9 +25,7 @@
   position: relative;
   margin-bottom: 10px;
   word-break: break-all;
-  &:after {
-    @include setBottomLine();
-  }
+
 }
 .yz-comment {
   line-height: 1.4;
@@ -45,8 +43,12 @@
 .yz-comment-tip {
   text-align: right;
   color: #576b95;
+  &:before {
+    @include setBottomLine();
+  }
 
   .iconfont {
     font-size: 12px;
   }
+
 }
