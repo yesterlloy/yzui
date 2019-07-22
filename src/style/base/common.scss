@@ -2,7 +2,7 @@
 
 $px-origin: 1px;
 
-@for $n from 1 through 60 {
+@for $n from 1 through 20 {
   @if $n % 5 == 0 {
     .p#{$n} {
       padding: $px-origin;
@@ -102,3 +102,40 @@ $px-origin: 1px;
   @include setTapColor();
 }
 
+.avatar-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.more-space {
+  margin-left: 10px;
+}
+
+.fullimg-img {
+  width: 100%;
+  height: auto;
+  border: 0 none;
+}
+
+.yz-chat-avatar img {
+  width: 100%;
+  height: auto;
+  border: 0 none;
+}
+
+
+.text-short {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.fullimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

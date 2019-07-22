@@ -24,16 +24,21 @@ $yzChatListBg: #ededed;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .yz-chat-swicher, .yz-chat-actions {
-  width: $chatIconFontSize;
+  // width: $chatIconFontSize;
   padding: ($chatInputHeight - $chatIconFontSize) / 2;
   text-align: center;
+  display: flex;
 
   i {
     font-size: $chatIconFontSize;
+  }
+
+  .btn-icon {
+    margin-right: 5px;
   }
 }
 .yz-chat-input-wrap {

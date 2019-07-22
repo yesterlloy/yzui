@@ -41,10 +41,18 @@
     }
 }
 
+.yz-tab-bg {
+  background-color: #EFEFF4;
+}
+
 .yz-tab-panel{
-    box-sizing: border-box;
-    height: 100%;
-    padding: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &.hide {
+    display: none;
+  }
 }
